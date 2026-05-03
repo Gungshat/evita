@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evita Chic | Official Boutique</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-purple: #8e44ad; 
+            --brand-black: #000000;
+            --bg-white: #ffffff;
+            --grey-border: #f0f0f0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-white);
+            color: var(--brand-black);
+            margin: 0;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+            border-bottom: 1px solid var(--grey-border);
+        }
+
+        .logo-main {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4rem;
+            color: var(--brand-purple);
+            margin: 0;
+            line-height: 1;
+        }
+
+        .logo-sub {
+            font-size: 0.9rem;
+            font-weight: 800;
+            letter-spacing: 4px;
+            color: var(--brand-black);
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .hero-statement {
+            padding: 40px 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        /* Narrative section to fill the "empty" feel */
+        .brand-narrative {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            padding: 0 20px;
+            line-height: 1.8;
+            color: #444;
+        }
+
+        .lookbook-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .item {
+            background-color: #fafafa;
+            border: 1px solid var(--grey-border);
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .item:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .features-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 60px 20px;
+            background-color: #fafafa;
+            margin-top: 40px;
+        }
+
+        .feature-box {
+            max-width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-box:hover { transform: translateY(-10px); }
+
+        .feature-box .icon { font-size: 2.5rem; margin-bottom: 15px; }
+
+        .feature-box h3 {
+            color: var(--brand-purple);
+            text-transform: uppercase;
+            font-size: 1.1rem;
+            letter-spacing: 1px;
+            margin-top: 0;
+        }
+
+        .insta-link {
+            display: inline-block;
+            margin: 50px 0;
+            padding: 18px 45px;
+            background-color: var(--brand-black);
+            color: var(--bg-white);
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+        .insta-link:hover { background-color: var(--brand-purple); }
+
+        footer {
+            padding: 60px 20px;
+            background-color: #f9f9f9;
+            font-size: 0.8rem;
+            color: #888;
+            border-top: 1px solid var(--grey-border);
+        }
+
+        footer strong { color: var(--brand-black); }
+
+        @media (max-width: 600px) {
+            .logo-main { font-size: 3rem; }
+            .logo-sub { font-size: 0.7rem; letter-spacing: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1 class="logo-main">Evita</h1>
+        <div class="logo-sub">BOUTIQUE EVITA CHIC</div>
+    </header>
+
+    <div class="hero-statement">
+        <p>Curating Elegance. Sourced Globally.</p>
+    </div>
+
+    <section class="brand-narrative">
+        <p>Bringing the finest craftsmanship from the fashion hubs of <strong>Türkiye</strong> directly to Skopje. With weekly shipments and an inventory of over 500 unique styles, we ensure premium quality for every occasion.</p>
+    </section>
+
+    <div class="lookbook-grid">
+        <div class="item"><img src="placeholder1.jpeg" alt="Collection Preview 1"></div>
+        <div class="item"><img src="placeholder2.jpeg" alt="Collection Preview 2"></div>
+        <div class="item"><img src="placeholder3.jpeg" alt="Collection Preview 3"></div>
+    </div>
+
+    <section class="features-section">
+        <div class="feature-box">
+            <div class="icon">✈️</div>
+            <h3>Direct Imports</h3>
+            <p>Sourced from Istanbul's premium manufacturers to bring the latest Turkish trends to your doorstep.</p>
+        </div>
+        <div class="feature-box">
+            <div class="icon">👗</div>
+            <h3>Volume & Variety</h3>
+            <p>Explore a high-volume collection of dresses and suits updated every single week.</p>
+        </div>
+    </section>
+
+    <a href="https://www.instagram.com/boutiqueevitachic/" target="_blank" class="insta-link">
+        Browse the Full Gallery
+    </a>
+
+    <footer>
+        <p>Technical Infrastructure by <strong>RM DIGITAL</strong> Studio</p>
+        <p>Skopje, North Macedonia | 2026</p>
+    </footer>
+
+</body>
+</html>
